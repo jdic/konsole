@@ -1,0 +1,31 @@
+{
+  "name": "konsole",
+  "version": "24.7.24",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "node test.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdic/konsole.git"
+  },
+  "keywords": [
+    "konsole",
+    "jdic"
+  ],
+  "author": "jdic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdic/konsole/issues"
+  },
+  "homepage": "https://github.com/jdic/konsole#readme",
+  "description": "Random thing to display information beautifully on the console.",
+  "devDependencies": {
+    "@types/colors": "^1.1.3",
+    "@types/node": "^20.14.12",
+    "colors": "^1.4.0",
+    "typescript": "^5.5.4"
+  }
+}
