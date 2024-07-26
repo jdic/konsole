@@ -1,0 +1,23 @@
+{
+  "name": "@jdic/konsole",
+  "version": "25.7.24-4",
+  "description": "Random console debugging library, but beautifully.",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdic/konsole.git"
+  },
+  "keywords": [
+    "konsole",
+    "jdic",
+    "jdi",
+    "no-deps"
+  ],
+  "author": "jdic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdic/konsole/issues"
+  },
+  "homepage": "https://github.com/jdic/konsole#readme"
+}
