@@ -2,7 +2,7 @@ export type LogLevel = 'WARN' | 'FAIL' | 'INFO' | 'SUCC'
 
 export interface LogMessage
 {
-  (message: any[]): void
+  (...message: any[]): void
 }
 
 export interface IColors
