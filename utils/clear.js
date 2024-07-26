@@ -6,7 +6,7 @@ const dir = path.join(__dirname, '..', 'dist')
 if (fs.existsSync(dir))
 {
   const items = fs.readdirSync(dir)
-    .filter((item) => !['README.nd', 'package.json'].includes(item))
+    .filter((item) => !['README.md', 'package.json'].includes(item))
 
   for (const item of items)
   {
