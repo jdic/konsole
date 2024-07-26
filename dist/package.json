@@ -4,6 +4,9 @@
   "description": "Random console debugging library, but beautifully.",
   "main": "index.js",
   "types": "./index.d.ts",
+  "scripts": {
+    "deploy": "npm publish --access public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdic/konsole.git"
