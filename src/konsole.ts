@@ -12,5 +12,5 @@ export const fail = (...message: any[]) =>
 export const info = (...message: any[]) =>
   log('[INFO]'.blue, message)
 
-export const success = (...message: any[]) =>
+export const succ = (...message: any[]) =>
   log('[SUCC]'.green, message)

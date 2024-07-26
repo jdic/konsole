@@ -28,6 +28,6 @@ var konsole = {
     warn: Konsole.warn,
     error: Konsole.fail,
     info: Konsole.info,
-    success: Konsole.success,
+    succ: Konsole.succ,
 };
 exports.default = konsole;

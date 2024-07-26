@@ -9,7 +9,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     return to.concat(ar || Array.prototype.slice.call(from));
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.success = exports.info = exports.fail = exports.warn = void 0;
+exports.succ = exports.info = exports.fail = exports.warn = void 0;
 require("colors");
 var log = function (tag, message) {
     return console.log.apply(console, __spreadArray([tag], message, false));
@@ -38,11 +38,11 @@ var info = function () {
     return log('[INFO]'.blue, message);
 };
 exports.info = info;
-var success = function () {
+var succ = function () {
     var message = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         message[_i] = arguments[_i];
     }
     return log('[SUCC]'.green, message);
 };
-exports.success = success;
+exports.succ = succ;
