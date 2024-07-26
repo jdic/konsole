@@ -2,14 +2,7 @@
 
 Package for personal use, because I'm too lazy to copy and paste the code of this function in my projects, and to make npm link and use it locally, I'd better upload it to npm while we're at it.
 
-Basically, it is to display labels for debugging or testing purposes:
-
-``` text
-- konsole.warn()    // [WARN] Yellow color
-- konsole.succ()    // [SUCC] Green color
-- konsole.info()    // [WARN] Blue color
-- konsole.fail()    // [FAIL] Red color
-```
+This is a lib with 0 dependencies, the package built in `dist/` is the same as the one to be published in npm packages.
 
 ### Built with
 
