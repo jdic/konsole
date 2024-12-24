@@ -1,7 +1,10 @@
 {
   "name": "@jdic/konsole",
-  "module": "app.ts",
+  "version": "24.12.24",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "type": "module",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "start": "bun app.ts",
     "start:dev": "bun --hot app.ts",
@@ -9,7 +12,7 @@
     "lint:fix": "eslint --fix",
     "prepare": "husky",
     "test": "jest",
-    "build": "bun app.ts",
+    "build": "bun build.ts",
     "clear": "rm -rf dist"
   },
   "devDependencies": {
@@ -28,5 +31,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@jdic/konsole": "./jdic-konsole-24.12.24-prerelease.tgz"
   }
 }
