@@ -1,3 +1,4 @@
+import pluginJest from 'eslint-plugin-jest'
 import tseslint from 'typescript-eslint'
 import pluginJs from '@eslint/js'
 import globals from 'globals'
@@ -7,6 +8,25 @@ import globals from 'globals'
  */
 export default
 [
+  {
+    files: ['**/*.test.ts'],
+    plugins:
+    {
+      jest: pluginJest,
+    },
+    languageOptions:
+    {
+      globals: pluginJest.environments.globals.globals,
+    },
+    rules:
+    {
+      'jest/no-disabled-tests': 'warn',
+      'jest/no-focused-tests': 'error',
+      'jest/no-identical-title': 'error',
+      'jest/prefer-to-have-length': 'warn',
+      'jest/valid-expect': 'error',
+    },
+  },
   {
     ignores: ['**/*.js', '**/*.d.ts'],
     rules:
@@ -43,7 +63,7 @@ export default
       'keyword-spacing': 'error',
       'max-nested-callbacks': ['error', { 'max': 4 }],
       'max-statements-per-line': ['error', { 'max': 2 }],
-      'no-console': ['error', { allow: ['warn', 'error', 'info', 'log'] }],
+      'no-console': 'off',
       'no-empty-function': 'off',
       'no-floating-decimal': 'error',
       'no-inline-comments': 'error',
